@@ -1,5 +1,31 @@
+body {
+  overflow-x: hidden;
+}
+
 header {
   background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav ul li {
+  display: inline;
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+}
+
+header img {
+  height: 200px;
+}
+
+ul li {
+  padding-right: 20px;
 }
 header,
 footer {
@@ -17,4 +43,13 @@ footer {
 
 footer {
   background-color: seagreen;
+}
+.card {
+  margin: 10px;
+  text-align: center;
+  box-shadow: 4px 4px 7px silver;
+}
+h5 {
+  font-size: 18px;
+  font-weight: 700;
 }
